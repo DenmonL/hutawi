@@ -31,7 +31,15 @@ tao.addEventListener("pointerdown", function () {
 //     playHutao(num);
 // });
 
-document.addEventListener("pointerup", function () {
+tao.addEventListener("pointerout", function () {
+    hutao.style.display = "block";
+    let hutao1 = document.querySelector(".hutao1");
+    if(hutao1){
+    hutao1.remove();
+}
+    // showHutao();
+});
+tao.addEventListener("pointerup", function () {
     hutao.style.display = "block";
     let hutao1 = document.querySelector(".hutao1");
     if(hutao1){
