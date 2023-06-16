@@ -17,8 +17,29 @@ tao.addEventListener("mousedown", function () {
 
     playHutao(num);
 });
+tao.addEventListener("touchstart", function () {
+    let num = randomNumber(2, 1);
+
+    hutao.style.display = "none";
+    let elem = document.createElement("img");
+    elem.src = `src/hutao${num}.png`;
+    elem.classList.add("img-fluid");
+    elem.classList.add("hutao1");
+
+    canvas.appendChild(elem);
+
+    playHutao(num);
+});
 
 document.addEventListener("mouseup", function () {
+    hutao.style.display = "block";
+    let hutao1 = document.querySelector(".hutao1");
+    if(hutao1){
+    hutao1.remove();
+}
+    // showHutao();
+});
+document.addEventListener("touchend", function () {
     hutao.style.display = "block";
     let hutao1 = document.querySelector(".hutao1");
     if(hutao1){
