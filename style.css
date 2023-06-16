@@ -1,0 +1,35 @@
+body {
+    background-color: #c9a793;
+}
+
+.header {
+    height: 50px;
+    width: 100%;
+    background-color: #4d3434;
+    margin-bottom: 0;
+}
+
+.separated {
+    height: 30vh;
+}
+.separated-2 {
+    height: 10vh;
+}
+
+#button {
+    user-select: none;
+    height: 100px;
+    width: 100px;
+    background-color: #855858;
+    border-radius: 50%;
+}
+
+#button:hover{
+    filter: saturate(80%);
+}
+
+#button:active {
+    border-width: 10px;
+    border-style: solid;
+    border-color: #a76666;
+}
