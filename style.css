@@ -2,6 +2,10 @@ body {
     background-color: #c9a793;
 }
 
+.preload {
+    position: absolute;
+    visibility: hidden;
+}
 .header {
     height: 50px;
     width: 100%;
